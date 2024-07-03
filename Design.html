@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Health Zone - Naturopathy</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('img/nature-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #f4f4f4;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: rgba(0, 100, 0, 0.7);
+        }
+
+        .left, .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .left img {
+            width: 70px;
+        }
+
+        .left div {
+            margin-left: 10px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        .mid {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .navbar {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar li {
+            display: inline;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: #f4f4f4;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            background: rgba(255, 255, 255, 0.2);
+            text-decoration: underline;
+        }
+
+        .btn {
+            margin: 0 5px;
+            padding: 8px 16px;
+            background-color: #006400;
+            color: #f4f4f4;
+            border: 2px solid #8fbc8f;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #f4f4f4;
+            color: #006400;
+            font-size: large;
+        }
+
+        .container {
+            background: rgba(0, 100, 0, 0.7);
+            border: 2px solid #f4f4f4;
+            margin: 100px auto;
+            padding: 35px;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .forms-group input {
+            display: block;
+            margin: 10px auto;
+            text-align: center;
+            padding: 10px;
+            width: calc(100% - 20px);
+            max-width: 320px;
+            font-size: 16px;
+            border: 1px solid #8fbc8f;
+            border-radius: 5px;
+        }
+
+        .container h1 {
+            margin-bottom: 20px;
+        }
+
+        .container button {
+            display: block;
+            margin: 20px auto 0;
+            width: calc(100% - 20px);
+            max-width: 320px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar li {
+                font-size: 18px;
+            }
+
+            .btn {
+                padding: 6px 12px;
+            }
+
+            .container {
+                margin: 50px 20px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/tree.jpg" alt="Dr. Health Zone Logo">
+            <div>Dr. Health Zone</div>
+        </div>
+
+        <nav class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Treatments</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Experience the Best Naturopathy Treatments</h1>
+        <form action="noaction.php" class="forms-group">
+            <div>
+                <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <input type="number" name="age" placeholder="Enter your Age" required>
+            </div>
+            <div>
+                <input type="text" name="gender" placeholder="Enter your Gender" required>
+            </div>
+            <div>
+                <input type="tel" name="mobile" placeholder="Enter your Mobile Number" required>
+            </div>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
